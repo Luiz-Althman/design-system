@@ -1,0 +1,26 @@
+{
+    "name": "@althman-ui/tokens",
+    "version": "1.0.0",
+    "description": "",
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "scripts": {
+        "build": "tsup src/index.ts --format esm,cjs --dts",
+        "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
+        "lint": "eslint src/**/*.ts* --fix"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+        "@althman-ui/eslint-config": "*",
+        "@althman-ui/ts-config": "*",
+        "@eslint/js": "^9.19.0",
+        "eslint": "^9.19.0",
+        "eslint-plugin-react": "^7.37.4",
+        "globals": "^15.14.0",
+        "tsup": "^8.3.6",
+        "typescript": "^5.7.3"
+    }
+}

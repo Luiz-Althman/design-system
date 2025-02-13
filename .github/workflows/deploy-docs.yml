@@ -1,4 +1,4 @@
-name: Deploy docs
+name: Deploy Storybook
 
 on:
     push:
@@ -9,20 +9,26 @@ jobs:
     build-and-deploy:
         runs-on: ubuntu-latest
         steps:
-            - name: Checkout
+            - name: Checkout código
               uses: actions/checkout@v4
+              with:
+                  persist-credentials: false # Garante que usaremos o token manualmente
 
             - name: Setup Node.js
               uses: actions/setup-node@v4
               with:
                   node-version: 18
 
-            - run: npm ci
+            - name: Instalar dependências
+              run: npm ci
 
-            - run: npm run build
+            - name: Construir Storybook
+              run: npm run build-storybook
 
-            - name: Deploy storybook
+            - name: Deploy Storybook
+              run: npm run deploy-storybook
               working-directory: ./packages/docs
-              run: npm run deploy-storybook -- --ci --existing-output-dir=storybook-static
               env:
-                  GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
+                  NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  GIT_USER: 'github-actions[bot]'
+                  GIT_EMAIL: 'github-actions@github.com'

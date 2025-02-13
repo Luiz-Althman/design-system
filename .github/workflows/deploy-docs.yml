@@ -27,7 +27,7 @@ jobs:
                   git config --global user.email "github-actions@github.com"
 
             - name: Deploy Storybook
-              run: npm run deploy-storybook
+              run: touch storybook-static/.nojekyll && npm run deploy-storybook -- --ci --existing-output-dir=storybook-static
               working-directory: ./packages/docs
               env:
                   GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}

@@ -34,5 +34,5 @@ jobs:
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-                  TURBO_TOKEN: SBSR9WQ4CIfjp7dTCUreSZUy
+                  TURBO_TOKEN: ${{ secrets.VERCEL_TOKEN }}
                   TURBO_TEAM: luiz-henrique-althmans-projects

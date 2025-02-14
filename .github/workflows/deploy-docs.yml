@@ -22,8 +22,6 @@ jobs:
             - run: npm ci
 
             - run: npm run build
-              TURBO_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-              TURBO_TEAM: luiz-henrique-althmans-projects
 
             - name: Configurar Git
               run: |

@@ -10,7 +10,7 @@
         "lint": "turbo run lint",
         "changeset": "changeset",
         "version-packages": "changeset version",
-        "release": "turbo run build --filter=!@althman-ui/docs && changeset publish"
+        "release": "turbo run build && changeset publish"
     },
     "devDependencies": {
         "@changesets/cli": "^2.27.12",

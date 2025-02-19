@@ -8,7 +8,7 @@
         "preview": "vite preview",
         "dev": "storybook dev -p 6006",
         "build": "storybook build",
-        "deploy-storybook": "storybook-to-ghpages --ci --existing-output-dir=storybook-static --branch=gh-pages --git-remote=origin --token=${GH_TOKEN}"
+        "deploy-storybook": "storybook-to-ghpages"
     },
     "dependencies": {
         "@althman-ui/eslint-config": "*",

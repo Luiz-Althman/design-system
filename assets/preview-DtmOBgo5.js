@@ -1,0 +1,1 @@
+import{N as r}from"./index-B8GfSglM.js";import"./index-Cf9XvIV_.js";import"./_commonjsHelpers-CqkleIqs.js";const t={parameters:{darkMode:{dark:{...r.dark,appBg:"black"},current:"dark"},controls:{matchers:{color:/(background|color)$/i,date:/Date$/i}},docs:{theme:r.dark}}};export{t as default};

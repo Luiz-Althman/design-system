@@ -1,0 +1,3 @@
+import{j as t}from"./index-BmrwZvbX.js";import{useMDXComponents as m}from"./index-BSt8MGKu.js";import{M as r}from"./index-B5I5jmVu.js";import"./_commonjsHelpers-CqkleIqs.js";import"./index-ByctJgwf.js";import"./index-Cf9XvIV_.js";import"./iframe-BP7V5jNZ.js";import"./index-B8GfSglM.js";import"./index-Brs1icLk.js";import"./index-ogSvIofg.js";function e(n){const o={h1:"h1",p:"p",...m(),...n.components};return t.jsxs(t.Fragment,{children:[t.jsx(r,{autoTitle:"Home"}),`
+`,t.jsx(o.h1,{id:"althman-ui",children:"Althman UI"}),`
+`,t.jsx(o.p,{children:"Design System Althman."})]})}function d(n={}){const{wrapper:o}={...m(),...n.components};return o?t.jsx(o,{...n,children:t.jsx(e,{...n})}):e(n)}export{d as default};
